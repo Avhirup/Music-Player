@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #36454F;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    /* border: 2px solid white; */
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background: #000;
+    color: aliceblue;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.brand img {
+    width: 32px;
+    padding-right: 5px;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: #000;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 30px;
+    background-image: url('./covers/bg1.jpeg');
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    background-color: #000;
+    color: aliceblue;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.icons {
+    /* border: 2px solid red; */
+    margin-top: 18px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 2px 20px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songList {
+    /* border: 2px solid blueviolet; */
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 40%;
+    color: black;
+    margin: 12px 0;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+}
+
+.songItem img {
+    width: 45px;
+    /* margin: 0 20px; */
+    border-radius: 5px;
+}
+
+.songlistplay {
+    /* border: 2px solid blue; */
+}
+
+.songlistplay i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.timestamp {
+    margin: 0 20px;
+
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songInfo {
+    position: absolute;
+    margin-top: 20px;
+    left: 10vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
